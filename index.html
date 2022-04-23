@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+</head>
+<body>
+    <main>
+        <div class="music-selection">
+            <form id="text-form">
+                <input type="text" placeholder="Insert music url" id="url" />
+                <button type="submit">OK</button>
+            </form>
+        </div>
+        <div class="container">
+            <div id="title" class="title">
+            </div>
+            <div class="progress">
+                <div class="full-progress"></div>
+                <div id="partial-progress" class="partial-progress"></div>
+            </div>
+            <div class="menu">
+                <button id="backward" onclick="backward()">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+                <button id="play" onclick="play()">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button id="forward" onclick="forward()" >
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <audio onended="end()" id="audio-player" src="http://designband.com/wp-content/uploads/2015/08/Oswego.mp3" />
+    <script src="js/main.js"></script>
+</body>
+</html>
