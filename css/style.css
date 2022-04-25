@@ -20,9 +20,22 @@ main {
 .music-selection {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
     width: 50%;
     margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.music-selection form {
+    display: flex;
+    width: 100%
+}
+
+.music-selection input {
+    flex: 1;
+}
+
+.music-selection button {
+    margin-left: 10px;
 }
 
 .container {
@@ -40,6 +53,15 @@ main {
     margin-bottom: 15px;
 }
 
+.time {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+}
+
 .menu {
     display: flex;
     justify-content: center;
@@ -54,6 +76,14 @@ main {
     height: 60px;
     border-radius: 30px;
     margin: 0 15px;
+}
+
+.menu button:hover {
+    background-color: #000000;
+}
+
+.menu button:hover i {
+    color: #ffffff;
 }
 
 .menu button i {

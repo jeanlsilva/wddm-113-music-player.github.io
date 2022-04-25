@@ -23,6 +23,10 @@
                 <div class="full-progress"></div>
                 <div id="partial-progress" class="partial-progress"></div>
             </div>
+            <div class="time">
+                <p id="current">0:00</p>
+                <p id="total">0:00</p>
+            </div>
             <div class="menu">
                 <button id="backward" onclick="backward()">
                     <i class="fa-solid fa-backward"></i>
@@ -36,7 +40,7 @@
             </div>
         </div>
     </main>
-    <audio onended="end()" id="audio-player" src="http://designband.com/wp-content/uploads/2015/08/Oswego.mp3" />
+    <audio preload="metadata" onended="end()" id="audio-player" src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3?_=1" />
     <script src="js/main.js"></script>
 </body>
 </html>
